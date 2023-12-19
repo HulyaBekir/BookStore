@@ -1,30 +1,37 @@
-﻿using BookStore.Users.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using BookStore.BL.Interfaces;
+using BookStore.DL.Interfaces;
+using BookStore.Users.Models;
 
 namespace BookStore.BL.Services
 
 {
     public class AuthorService : IAuthorService
     {
-        private readonly IAuthorService _authorService;
+        private readonly IAuthorRepository _autorRepository;
 
-        public AuthorService(IAuthorService authorService)
+        public AuthorService(IAuthorRepository autorRepository)
         {
-            _authorService = authorService;
+            _autorRepository = autorRepository;
         }
 
-        void SetAuthorService(IAuthorService authorService)
+        public Author GetById(int id)
         {
-
+            return _autorRepository.GetById(id);
         }
-        
+
+        public void Add(Author author)
+        {
+            _autorRepository.Add(author);
+        }
+
+        public void Remove(int id)
+        {
+            _autorRepository.Remove(id);
+        }
+
         public List<Author> GetAll()
         {
-
+            return _autorRepository.GetAll();
         }
     }
 
