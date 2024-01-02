@@ -40,18 +40,28 @@ namespace BookStore.DL.MemoryDb
                 Id = 1,
                 Title = "Name 1",
                 AuthorId = 1,
+                ReleaseDate = new DateTime(2011, 11, 05)
+            },
+             new Book()
+            {
+                Id = 4,
+                Title = "Name 4",
+                AuthorId = 1,
+                ReleaseDate = new DateTime(2015, 11, 06)
             },
              new Book()
             {
                 Id = 2,
                 Title = "Name 2",
                 AuthorId = 2,
+                ReleaseDate = new DateTime(2015, 11, 05)
             },
               new Book()
             {
                 Id = 3,
                 Title = "Name 3",
                 AuthorId= 3,
+                ReleaseDate = new DateTime(2020, 12, 05)
             }
         };
 

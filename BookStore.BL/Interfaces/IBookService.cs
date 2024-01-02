@@ -1,4 +1,5 @@
 ﻿using BookStore.Models;
+using BookStore.Models.Models.Responses;
 using BookStore.Users.Models;
 using System;
 using System.Collections.Generic;
@@ -17,5 +18,7 @@ namespace BookStore.BL.Interfaces
         void Add(Book book);
 
         void Remove(int id);
+
+        List<Book> GetAllByAuthorId(int id);
     }
 }

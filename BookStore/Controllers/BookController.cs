@@ -34,6 +34,7 @@ namespace BookStore.Controllers
 
         public void Add([FromBody]Book book)
         {
+            
             _bookService.Add(book);
         }
 

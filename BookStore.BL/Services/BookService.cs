@@ -1,12 +1,6 @@
 ﻿using BookStore.BL.Interfaces;
 using BookStore.DL.Interfaces;
 using BookStore.Models;
-using BookStore.Users.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BookStore.BL.Services
 {
@@ -37,6 +31,11 @@ namespace BookStore.BL.Services
         public List<Book> GetAll()
         {
             return _bookRepository.GetAll();
+        }
+
+        public List<Book> GetAllByAuthorId(int id)
+        {
+            return _bookRepository.GetAllByAuthorId(id);
         }
     }
 }
