@@ -3,6 +3,9 @@ using BookStore.BL.Services;
 using BookStore.DL.Interfaces;
 using BookStore.DL.Reconstruction;
 using BookStore.DL.Repositores;
+using BookStore.HealthCheck;
+using FluentValidation;
+using FluentValidation.AspNetCore;
 
 namespace BookStore
 {
@@ -18,6 +21,14 @@ namespace BookStore
             builder.Services.AddSingleton<IBookService, BookService>();
             builder.Services.AddSingleton<IAuthorService, AuthorService>();
             builder.Services.AddSingleton<ILibraryServices, LibraryService>();
+
+            builder.Services.AddFluentValidationAutoValidation().AddFluentValidationClientsideAdapters();
+            builder.Services.AddValidatorsFromAssemblyContaining(typeof(Program));
+            builder.Services.AddSingleton<IBookRepository, BookRepository>();
+
+            builder.Services.AddHealthChecks().AddCheck<CustomHealthCheck>(nameof(CustomHealthCheck));
+
+
 
 
 
