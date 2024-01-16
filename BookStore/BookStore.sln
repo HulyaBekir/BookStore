@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.DL", "..\BookStor
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.BL", "..\BookStore.BL\BookStore.BL.csproj", "{34732278-E23D-4205-AF04-28BD8C14FCC9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.Test", "..\BookStore.Test\BookStore.Test.csproj", "{30A11AFB-6646-4D19-AFB9-F34F145451E9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{34732278-E23D-4205-AF04-28BD8C14FCC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34732278-E23D-4205-AF04-28BD8C14FCC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34732278-E23D-4205-AF04-28BD8C14FCC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30A11AFB-6646-4D19-AFB9-F34F145451E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30A11AFB-6646-4D19-AFB9-F34F145451E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30A11AFB-6646-4D19-AFB9-F34F145451E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30A11AFB-6646-4D19-AFB9-F34F145451E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
