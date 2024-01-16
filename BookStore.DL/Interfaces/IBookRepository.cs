@@ -19,6 +19,7 @@ namespace BookStore.DL.Interfaces
         void Remove(int id);
 
         List<Book> GetAllByAuthorId(int id);
+       
     }
 
 }
